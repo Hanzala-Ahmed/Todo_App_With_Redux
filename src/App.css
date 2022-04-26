@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  background-color: #1b1b1b;
+  width: 100vw;
+  height: 100vh;
+  /* padding: 20px 20px; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.todoMainBox {
+  /* background-color: aliceblue; */
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todoMainBox h3 {
+  margin-bottom: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+  width: fit-content;
+  /* background-color: white; */
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTodo {
+  border-radius: 5px;
+  padding: 0px 0px 0px 10px;
+  background-color: white;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form span {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #03aca3;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.todoList{
+  background-color: blue;
+  width: 50%;
+  margin: 20px 0px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoList span {
+  /* background-color: #03aca3; */
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-right: 10px;
+  pointer-events: painted;
+  cursor: pointer;
+}
+
+.todoList .icon {
+  font-size: 30px;
+  cursor: pointer;
 }
